@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoBu Martial Arts - Martial Arts Programs</title>
+    <!-- Bootstrap CSS (dark theme) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <span class="text-danger">DoBu</span> Martial Arts
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" id="navItems">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-home me-1"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="martial-arts.html">
+                        <i class="fas fa-fist-raised me-1"></i> Martial Arts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="schedule.html">
+                        <i class="fas fa-calendar-alt me-1"></i> Schedule
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">
+                        <i class="fas fa-tags me-1"></i> Pricing
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="instructors.html">
+                        <i class="fas fa-user-ninja me-1"></i> Instructors
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">
+                        <i class="fas fa-images me-1"></i> Gallery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        <i class="fas fa-envelope me-1"></i> Contact
+                    </a>
+                </li>
+                <!-- Login/Register or User Dropdown will be dynamically added -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container py-5">
+            <h1 class="section-heading text-center mb-5">Our Martial Arts Programs</h1>
+
+            <!-- Overview of all martial arts -->
+            <div class="row g-4">
+                <!-- Jiu-Jitsu -->
+                <div class="col-md-6 col-lg-4" id="jiu-jitsu">
+                    <div class="card h-100 shadow">
+                        <div class="card-body p-4">
+                            <h2 class="card-title h4 text-danger mb-3">Jiu-Jitsu</h2>
+                            <p class="card-text">A stealthy art of grappling and ground combat, where skill and leverage outmatch brute strength.</p>
+                            <div class="mt-3">
+                                <h5 class="h6 mb-2">Key Benefits:</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Improves flexibility</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Builds cardiovascular endurance</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                            <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#jiuJitsuModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Karate -->
+                <div class="col-md-6 col-lg-4" id="karate">
+                    <div class="card h-100 shadow">
+                        <div class="card-body p-4">
+                            <h2 class="card-title h4 text-danger mb-3">Karate</h2>
+                            <p class="card-text">A striking art using punching, kicking, knee strikes, elbow strikes and open-hand techniques such as knife-hands.</p>
+                            <div class="mt-3">
+                                <h5 class="h6 mb-2">Key Benefits:</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Increases strength and power</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Improves coordination</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                            <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#karateModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Judo -->
+                <div class="col-md-6 col-lg-4" id="judo">
+                    <div class="card h-100 shadow">
+                        <div class="card-body p-4">
+                            <h2 class="card-title h4 text-danger mb-3">Judo</h2>
+                            <p class="card-text">A powerful martial art focused on grappling and ground fighting, using technique to outsmart and overpower larger foes.</p>
+                            <div class="mt-3">
+                                <h5 class="h6 mb-2">Key Benefits:</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Develops balance</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Improves spatial awareness</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                            <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#judoModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Muay Thai -->
+                <div class="col-md-6 col-lg-4" id="muay-thai">
+                    <div class="card h-100 shadow">
+                        <div class="card-body p-4">
+                            <h2 class="card-title h4 text-danger mb-3">Muay Thai</h2>
+                            <p class="card-text">Known as 'The Art of Eight Limbs,' Muay Thai unleashes punches, kicks, elbows, and knees, making full use of eight striking points.</p>
+                            <div class="mt-3">
+                                <h5 class="h6 mb-2">Key Benefits:</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Develops incredible conditioning</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Enhances striking ability</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                            <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#muayThaiModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Self-Defense -->
+                <div class="col-md-6 col-lg-4" id="self-defense">
+                    <div class="card h-100 shadow">
+                        <div class="card-body p-4">
+                            <h2 class="card-title h4 text-danger mb-3">Self-Defense</h2>
+                            <p class="card-text">Real-world tactics to defend yourself and your allies from harm with precision and skill.</p>
+                            <div class="mt-3">
+                                <h5 class="h6 mb-2">Key Benefits:</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Builds confidence</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Increases situational awareness</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                            <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#selfDefenseModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kids Martial Arts -->
+                <div class="col-md-6 col-lg-4" id="kids-martial-arts">
+                    <div class="card h-100 shadow">
+                        <div class="card-body p-4">
+                            <h2 class="card-title h4 text-danger mb-3">Kids Martial Arts</h2>
+                            <p class="card-text">Fun and age-appropriate martial arts classes for kids that build discipline, respect, and coordination.</p>
+                            <div class="mt-3">
+                                <h5 class="h6 mb-2">Key Benefits:</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Develops focus and discipline</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> Builds confidence and social skills</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                            <button type="button" class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#kidsModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Special Programs Section -->
+            <div class="mt-5 pt-3">
+                <h2 class="section-heading text-center mb-4">Special Programs</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow">
+                            <div class="card-body p-4">
+                                <h3 class="card-title h4 text-danger mb-3">6-Week Self Defense Course</h3>
+                                <p class="card-text">Master essential self-defense techniques in our intensive 6-week course, gaining confidence and readiness for any challenge.</p>
+                                <ul class="list-unstyled mt-3">
+                                    <li><i class="fas fa-circle-check text-success me-2"></i> 2 sessions per week</li>
+                                    <li><i class="fas fa-circle-check text-success me-2"></i> No experience required</li>
+                                    <li><i class="fas fa-circle-check text-success me-2"></i> Practical scenarios and techniques</li>
+                                    <li><i class="fas fa-circle-check text-success me-2"></i> Certificate upon completion</li>
+                                </ul>
+                                <div class="d-flex align-items-center mt-3">
+                                    <span class="price h4 mb-0">£180.00</span>
+                                    <span class="text-muted ms-2">for the complete course</span>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                                <a href="contact.html" class="btn btn-primary w-100">Enquire Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow">
+                            <div class="card-body p-4">
+                                <h3 class="card-title h4 text-danger mb-3">Private Lessons</h3>
+                                <p class="card-text">Personalized one-on-one instruction customized to your goals and needs, ideal for accelerated learning and targeted skill development.</p>
+                                <ul class="list-unstyled mt-3">
+                                    <li><i class="fas fa-circle-check text-success me-2"></i> Personal attention from expert instructors</li>
+                                    <li><i class="fas fa-circle-check text-success me-2"></i> Flexible scheduling</li>
+                                    <li><i class="fas fa-circle-check text-success me-2"></i> Customized training plan</li>
+                                    <li><i class="fas fa-circle-check text-success me-2"></i> All experience levels welcome</li>
+                                </ul>
+                                <div class="d-flex align-items-center mt-3">
+                                    <span class="price h4 mb-0">£15.00</span>
+                                    <span class="text-muted ms-2">per hour</span>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 p-4 pt-0">
+                                <a href="contact.html" class="btn btn-primary w-100">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Martial Arts Modals -->
+    <!-- Jiu-Jitsu Modal -->
+    <div class="modal fade" id="jiuJitsuModal" tabindex="-1" aria-labelledby="jiuJitsuModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="jiuJitsuModalLabel">Jiu-Jitsu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 mb-4">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WEcwFqQjx5w?si=d8J3oIThthPszcs5&amp;start=76" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <p class="lead">Jiu-Jitsu focuses on grappling and ground fighting, using smart techniques to take down bigger opponents.</p>
+                    
+                    <h6 class="mt-4 mb-3">Benefits:</h6>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Improves flexibility</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Builds cardiovascular endurance</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Develops self-defense skills</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Enhances problem-solving abilities</li>
+                    </ul>
+                    
+                    <h6 class="mt-4 mb-3">Class Schedule:</h6>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Time</th>
+                                <th>Level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>6:00 - 7:30 AM</td>
+                                <td>All Levels</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>7:00 - 9:00 PM</td>
+                                <td>All Levels</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>6:00 - 7:30 AM</td>
+                                <td>All Levels</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>5:30 - 7:00 PM</td>
+                                <td>All Levels</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>6:00 - 7:30 AM</td>
+                                <td>All Levels</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>3:00 - 5:00 PM</td>
+                                <td>All Levels</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="schedule.html" class="btn btn-primary">View Full Schedule</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Karate Modal -->
+    <div class="modal fade" id="karateModal" tabindex="-1" aria-labelledby="karateModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="karateModalLabel">Karate</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 mb-4">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DnDyvn4dzh0?si=RUxA9Vh7gl9Pakg9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <p class="lead">Karate is a precise striking art utilizing punches, kicks, knees, elbows, and deadly open-hand techniques like knife-hands.</p>
+                    
+                    <h6 class="mt-4 mb-3">Benefits:</h6>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Increases strength and power</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Improves coordination</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Builds discipline</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Enhances focus</li>
+                    </ul>
+                    
+                    <h6 class="mt-4 mb-3">Class Schedule:</h6>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Time</th>
+                                <th>Level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>6:00 - 7:30 AM</td>
+                                <td>All Levels</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>5:30 - 7:00 PM</td>
+                                <td>All Levels</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>6:00 - 7:30 PM</td>
+                                <td>All Levels</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>10:00 - 11:30 AM</td>
+                                <td>All Levels</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="schedule.html" class="btn btn-primary">View Full Schedule</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Judo Modal -->
+    <div class="modal fade" id="judoModal" tabindex="-1" aria-labelledby="judoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="judoModalLabel">Judo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 mb-4">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/iZoYuQBK3Mo?si=F4fEUed8G2U9xWyO&amp;start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <p class="lead">Judo is a tactical modern art, where victory comes by throwing or grounding your opponent with skill.</p>
+                    
+                    <h6 class="mt-4 mb-3">Benefits:</h6>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Develops balance</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Improves spatial awareness</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Builds core strength</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Teaches falling safely</li>
+                    </ul>
+                    
+                    <h6 class="mt-4 mb-3">Class Schedule:</h6>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Time</th>
+                                <th>Level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>6:00 - 7:30 AM</td>
+                                <td>All Levels</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>5:30 - 7:00 PM</td>
+                                <td>All Levels</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>8:00 - 10:00 AM</td>
+                                <td>All Levels</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>1:00 - 2:30 PM</td>
+                                <td>All Levels</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="schedule.html" class="btn btn-primary">View Full Schedule</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Muay Thai Modal -->
+    <div class="modal fade" id="muayThaiModal" tabindex="-1" aria-labelledby="muayThaiModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="muayThaiModalLabel">Muay Thai</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 mb-4">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/h5RAHX62riE?si=r-EQ3422fyChkJj6&amp;start=62" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <p class="lead">Muay Thai, ‘The Art of Eight Limbs,’ unleashes punches, kicks, elbows, and knees, maximizing eight striking points.</p>
+                    
+                    <h6 class="mt-4 mb-3">Benefits:</h6>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Develops incredible conditioning</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Enhances striking ability</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Improves endurance</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Builds mental toughness</li>
+                    </ul>
+                    
+                    <h6 class="mt-4 mb-3">Class Schedule:</h6>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Time</th>
+                                <th>Level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>6:00 - 7:30 PM</td>
+                                <td>All Levels</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>6:00 - 7:30 PM</td>
+                                <td>All Levels</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>5:30 - 7:00 PM</td>
+                                <td>All Levels</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>10:00 - 11:30 AM</td>
+                                <td>All Levels</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="schedule.html" class="btn btn-primary">View Full Schedule</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Self-Defense Modal -->
+    <div class="modal fade" id="selfDefenseModal" tabindex="-1" aria-labelledby="selfDefenseModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="selfDefenseModalLabel">Self-Defense</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 mb-4">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HG0AsTOxI5g?si=ETv4-1NoIPQtK9Yn&amp;start=25" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <p class="lead">Real-world tactics to defend yourself and your allies from harm with skill and precision.</p>
+                    
+                    <h6 class="mt-4 mb-3">Benefits:</h6>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Builds confidence</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Increases situational awareness</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Teaches practical defense skills</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Enhances mental resilience</li>
+                    </ul>
+                    
+                    <h6 class="mt-4 mb-3">Class Schedule:</h6>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Time</th>
+                                <th>Level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>6:00 - 7:30 PM</td>
+                                <td>All Levels</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>6:00 - 7:30 PM</td>
+                                <td>All Levels</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>11:00 AM - 12:30 PM</td>
+                                <td>All Levels</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="schedule.html" class="btn btn-primary">View Full Schedule</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kids Martial Arts Modal -->
+    <div class="modal fade" id="kidsModal" tabindex="-1" aria-labelledby="kidsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="kidsModalLabel">Kids Martial Arts</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 mb-4">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YVhCxKL9wfU?si=s2GNQe_kL5WH4oX7&amp;start=105" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <p class="lead">Dynamic martial arts sessions for kids focusing on discipline, respect, coordination, and fun.</p>
+                    
+                    <h6 class="mt-4 mb-3">Benefits:</h6>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Develops focus and discipline</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Builds confidence and social skills</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Improves coordination</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Encourages teamwork</li>
+                    </ul>
+                    
+                    <h6 class="mt-4 mb-3">Class Schedule:</h6>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Time</th>
+                                <th>Level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>4:00 - 5:00 PM</td>
+                                <td>5-10 Years</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>4:00 - 5:00 PM</td>
+                                <td>5-10 Years</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>9:00 - 10:00 AM</td>
+                                <td>5-10 Years</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="schedule.html" class="btn btn-primary">View Full Schedule</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-danger mb-3">DoBu Martial Arts</h5>
+                    <p>We craft innovative, accessible websites that help organizations of all sizes build strong, user-friendly brands.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-danger mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Home</a></li>
+                        <li class="mb-2"><a href="martial-arts.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Martial Arts</a></li>
+                        <li class="mb-2"><a href="schedule.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Class Schedule</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Pricing</a></li>
+                        <li class="mb-2"><a href="instructors.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Instructors</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-danger mb-3">Contact Us</h5>
+                    <address>
+                        <p class="mb-2"><i class="fas fa-map-marker-alt me-2 text-danger"></i> Stockport College, Manchester, UK</p>
+                        <p class="mb-2"><i class="fas fa-phone-alt me-2 text-danger"></i> +44 20 1234 5678</p>
+                        <p class="mb-2"><i class="fas fa-envelope me-2 text-danger"></i> info@dobumartialarts.com</p>
+                        <p><i class="fas fa-clock me-2 text-danger"></i> Mon-Sat: 6:00 AM - 9:00 PM</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 DoBu Martial Arts. All rights reserved.</p>
+                    <p class="mb-0">&copy; Developed by HMD.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

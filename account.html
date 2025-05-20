@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoBu Martial Arts - My Account</title>
+    <!-- Bootstrap CSS (dark theme) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="text-danger">DoBu</span> Martial Arts
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" id="navItems">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home me-1"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="martial-arts.html">
+                            <i class="fas fa-fist-raised me-1"></i> Martial Arts
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html">
+                            <i class="fas fa-calendar-alt me-1"></i> Schedule
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">
+                            <i class="fas fa-tags me-1"></i> Pricing
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instructors.html">
+                            <i class="fas fa-user-ninja me-1"></i> Instructors
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">
+                            <i class="fas fa-images me-1"></i> Gallery
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="fas fa-envelope me-1"></i> Contact
+                        </a>
+                    </li>
+                    <!-- Login/Register or User Dropdown will be dynamically added -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container py-5">
+            <h1 class="section-heading mb-5">My Account</h1>
+
+            <div class="row">
+                <!-- Account Information -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body">
+                            <h2 class="h4 text-danger mb-4">Account Information</h2>
+                            <div class="text-center mb-4">
+                                <div class="avatar bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px; font-size: 2rem;">
+                                    <span id="avatarInitial"></span>
+                                </div>
+                                <h3 class="h5 mb-0" id="displayName"></h3>
+                                <p class="text-muted small">Member since <span id="joinDate"></span></p>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label small text-muted">Email</label>
+                                <div class="form-control bg-dark" id="displayEmail"></div>
+                            </div>
+
+                            <div class="d-grid gap-2 mt-4">
+                                <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#editProfileModal">
+                                    <i class="fas fa-user-edit me-1"></i> Edit Profile
+                                </button>
+                                <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#changePasswordModal">
+                                    <i class="fas fa-key me-1"></i> Change Password
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Membership Information -->
+                <div class="col-lg-8 mb-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body">
+                            <h2 class="h4 text-danger mb-4">My Memberships</h2>
+                            
+                            <div class="table-responsive">
+                                <table class="table" id="membershipTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Plan</th>
+                                            <th>Description</th>
+                                            <th>Price</th>
+                                            <th>Start Date</th>
+                                            <th>Status</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="membershipBody">
+                                        <!-- Populated dynamically -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Membership Plans -->
+                <div class="col-12">
+                    <h2 class="h4 text-danger mb-4">Available Membership Plans</h2>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <!-- Basic Plan -->
+                        <div class="col">
+                            <div class="card pricing-card h-100">
+                                <div class="card-header bg-danger text-white text-center py-3">
+                                    <h3 class="h5 mb-0">Basic</h3>
+                                </div>
+                                <div class="card-body text-center d-flex flex-column">
+                                    <div class="py-3">
+                                        <span class="price">£25.00</span>
+                                        <span class="text-muted"> / month</span>
+                                    </div>
+                                    <p class="flex-grow-1">1 martial art - 2 sessions per week</p>
+                                    <ul class="list-unstyled mb-4 text-start">
+                                        <li><i class="fas fa-check text-success me-2"></i> Get exclusive access to one fighting style</li>
+                                        <li><i class="fas fa-check text-success me-2"></i> 2 classes per week</li>
+                                        <li><i class="fas fa-check text-success me-2"></i> Access to open mat sessions</li>
+                                    </ul>
+                                    <button class="btn btn-primary w-100 subscribe-button" data-plan="Basic" data-price="25.00">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Intermediate Plan -->
+                        <div class="col">
+                            <div class="card pricing-card h-100">
+                                <div class="card-header bg-danger text-white text-center py-3">
+                                    <h3 class="h5 mb-0">Elite</h3>
+                                </div>
+                                <div class="card-body text-center d-flex flex-column">
+                                    <div class="py-3">
+                                        <span class="price">£60.00</span>
+                                        <span class="text-muted"> / month</span>
+                                    </div>
+                                    <p class="flex-grow-1">Unlimited classes</p>
+                                    <ul class="list-unstyled mb-4 text-start">
+                                        <li><i class="fas fa-check text-success me-2"></i> Karate? Judo? Kung Fu? Why not all?</li>
+                                        <li><i class="fas fa-check text-success me-2"></i> Unlimited classes</li>
+                                        <li><i class="fas fa-check text-success me-2"></i> Priority booking</li>
+                                        <li><i class="fas fa-check text-success me-2"></i> 10% discount on private lessons</li>
+                                    </ul>
+                                    <button class="btn btn-primary w-100 subscribe-button" data-plan="Elite" data-price="60.00">Upgrade</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Advanced Plan -->
+                        <div class="col">
+                            <div class="card pricing-card h-100">
+                                <div class="card-header bg-secondary text-white text-center py-3">
+                                    <h3 class="h5 mb-0">Private Tuition</h3>
+                                </div>
+                                <div class="card-body text-center d-flex flex-column">
+                                    <div class="py-3">
+                                        <span class="price">£15.00</span>
+                                        <span class="text-muted"> / hour</span>
+                                    </div>
+                                    <p class="flex-grow-1">One-on-one martial arts tuition</p>
+                                    <ul class="list-unstyled mb-4 text-start">
+                                        <li><i class="fas fa-check text-success me-2"></i> Personalized instruction</li>
+                                        <li><i class="fas fa-check text-success me-2"></i> Choose your preferred martial art</li>
+                                        <li><i class="fas fa-check text-success me-2"></i> Flexible scheduling</li>
+                                    </ul>
+                                    <a href="contact.html" class="btn btn-outline-primary w-100">Book Session</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Class Bookings Section -->
+                <div class="col-12 mt-5">
+                    <h2 class="h4 text-danger mb-4">My Class Bookings</h2>
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Day</th>
+                                            <th>Time</th>
+                                            <th>Instructor</th>
+                                            <th>Status</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="bookingBody">
+                                        <!-- Populated dynamically -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Profile Modal -->
+    <div class="modal fade" id="editProfileModal" tabindex="-1" aria-labelledby="editProfileModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editProfileModalLabel">Edit Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editProfileForm">
+                        <div class="mb-3">
+                            <label for="editUsername" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="editUsername" value="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="editEmail" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.(com|co\.uk)$" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid email ending with .com or .co.uk.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="saveProfile">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Change Password Modal -->
+    <div class="modal fade" id="changePasswordModal" tabindex="-1" aria-labelledby="changePasswordModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="changePasswordModalLabel">Change Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="changePasswordForm">
+                        <div class="mb-3">
+                            <label for="currentPassword" class="form-label">Current Password</label>
+                            <input type="password" class="form-control" id="currentPassword" required>
+                            <div class="invalid-feedback">
+                                Please enter your current password.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newPassword" class="form-label">New Password</label>
+                            <input type="password" class="form-control" id="newPassword" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" required>
+                            <div class="invalid-feedback">
+                                Password must be at least 6 characters long, including uppercase, lowercase, a number, and a symbol.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmNewPassword" class="form-label">Confirm New Password</label>
+                            <input type="password" class="form-control" id="confirmNewPassword" required>
+                            <div class="invalid-feedback">
+                                Passwords must match.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="updatePassword">Update Password</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-danger mb-3">DoBu Martial Arts</h5>
+                    <p>We craft innovative, accessible websites that help organizations of all sizes build strong, user-friendly brands.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-danger mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Home</a></li>
+                        <li class="mb-2"><a href="martial-arts.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Martial Arts</a></li>
+                        <li class="mb-2"><a href="schedule.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Class Schedule</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Pricing</a></li>
+                        <li class="mb-2"><a href="instructors.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Instructors</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-danger mb-3">Contact Us</h5>
+                    <address>
+                        <p class="mb-2"><i class="fas fa-map-marker-alt me-2 text-danger"></i> Stockport College, Manchester, UK</p>
+                        <p class="mb-2"><i class="fas fa-phone-alt me-2 text-danger"></i> +44 20 1234 5678</p>
+                        <p class="mb-2"><i class="fas fa-envelope me-2 text-danger"></i> info@dobumartialarts.com</p>
+                        <p><i class="fas fa-clock me-2 text-danger"></i> Mon-Sat: 6:00 AM - 9:00 PM</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 DoBu Martial Arts. All rights reserved.</p>
+                    <p class="mb-0">&copy; Developed by HMD.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load user data
+            const email = localStorage.getItem('lastLoggedInEmail');
+            const users = JSON.parse(localStorage.getItem('users') || '[]');
+            const user = users.find(u => u.email === email);
+            if (user) {
+                const username = user.username || email.split('@')[0]; // Default to email prefix if no username
+                document.getElementById('displayName').textContent = username;
+                document.getElementById('displayEmail').textContent = email;
+                document.getElementById('avatarInitial').textContent = username.charAt(0).toUpperCase();
+                document.getElementById('joinDate').textContent = new Date().toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
+
+                // Load memberships from localStorage
+                let memberships = JSON.parse(localStorage.getItem('memberships') || '[]');
+                if (!memberships.find(m => m.email === email)) {
+                    memberships.push({ email, plans: [{ plan: 'Advanced', description: 'Any 2 martial arts - 5 sessions per week', price: '£45.00', startDate: 'May 5, 2023', status: 'Active' }] });
+                    localStorage.setItem('memberships', JSON.stringify(memberships));
+                }
+                updateMembershipTable();
+
+                // Load class bookings from localStorage
+                let bookings = JSON.parse(localStorage.getItem('bookings') || '[]');
+                if (!bookings.find(b => b.email === email)) {
+                    bookings.push({ email, classes: [
+                        { class: 'Jiu-Jitsu', day: 'Monday', time: '19:00 - 21:00', instructor: 'Mauricio Gomez', status: 'Confirmed' },
+                        { class: 'Karate', day: 'Wednesday', time: '17:30 - 19:00', instructor: 'Sarah Nova', status: 'Confirmed' }
+                    ] });
+                    localStorage.setItem('bookings', JSON.stringify(bookings));
+                }
+                updateBookingTable();
+            }
+
+            // Subscribe to a plan
+            document.querySelectorAll('.subscribe-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    const plan = this.getAttribute('data-plan');
+                    const price = this.getAttribute('data-price');
+                    let memberships = JSON.parse(localStorage.getItem('memberships') || '[]');
+                    const userMembership = memberships.find(m => m.email === email);
+                    if (userMembership) {
+                        userMembership.plans.push({ plan, description: button.parentElement.querySelector('p').textContent, price: `£${price}.00`, startDate: new Date().toLocaleDateString('en-GB'), status: 'Active' });
+                    } else {
+                        memberships.push({ email, plans: [{ plan, description: button.parentElement.querySelector('p').textContent, price: `£${price}.00`, startDate: new Date().toLocaleDateString('en-GB'), status: 'Active' }] });
+                    }
+                    localStorage.setItem('memberships', JSON.stringify(memberships));
+                    updateMembershipTable();
+                    alert(`Subscribed to ${plan} plan!`);
+                });
+            });
+
+            // Cancel membership
+            document.getElementById('membershipBody').addEventListener('click', function(e) {
+                if (e.target.classList.contains('cancel-membership')) {
+                    const row = e.target.closest('tr');
+                    const plan = row.cells[0].textContent;
+                    let memberships = JSON.parse(localStorage.getItem('memberships') || '[]');
+                    const userMembership = memberships.find(m => m.email === email);
+                    if (userMembership) {
+                        userMembership.plans = userMembership.plans.filter(p => p.plan !== plan);
+                        localStorage.setItem('memberships', JSON.stringify(memberships));
+                        row.remove();
+                        alert(`Canceled ${plan} plan.`);
+                    }
+                }
+            });
+
+            // Edit Profile
+            document.getElementById('saveProfile').addEventListener('click', function() {
+                const newUsername = document.getElementById('editUsername').value;
+                const newEmail = document.getElementById('editEmail').value;
+                if (newEmail && newEmail !== email) {
+                    let users = JSON.parse(localStorage.getItem('users') || '[]');
+                    const userIndex = users.findIndex(u => u.email === email);
+                    if (userIndex !== -1) {
+                        users[userIndex].email = newEmail;
+                        users[userIndex].username = newUsername || users[userIndex].username;
+                        localStorage.setItem('users', JSON.stringify(users));
+                        localStorage.setItem('lastLoggedInEmail', newEmail);
+                        location.reload();
+                    }
+                } else if (newUsername) {
+                    let users = JSON.parse(localStorage.getItem('users') || '[]');
+                    const userIndex = users.findIndex(u => u.email === email);
+                    if (userIndex !== -1) {
+                        users[userIndex].username = newUsername;
+                        localStorage.setItem('users', JSON.stringify(users));
+                        location.reload();
+                    }
+                }
+                bootstrap.Modal.getInstance(document.getElementById('editProfileModal')).hide();
+            });
+
+            // Change Password
+            document.getElementById('updatePassword').addEventListener('click', function() {
+                const currentPassword = document.getElementById('currentPassword').value;
+                const newPassword = document.getElementById('newPassword').value;
+                const confirmPassword = document.getElementById('confirmNewPassword').value;
+                let users = JSON.parse(localStorage.getItem('users') || '[]');
+                const user = users.find(u => u.email === email);
+                if (user && user.password === currentPassword) {
+                    if (newPassword === confirmPassword && newPassword.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/)) {
+                        user.password = newPassword;
+                        localStorage.setItem('users', JSON.stringify(users));
+                        alert('Password updated successfully!');
+                        bootstrap.Modal.getInstance(document.getElementById('changePasswordModal')).hide();
+                    } else {
+                        alert('New passwords do not match or do not meet requirements.');
+                    }
+                } else {
+                    alert('Current password is incorrect.');
+                }
+            });
+
+            // Update tables
+            function updateMembershipTable() {
+                const memberships = JSON.parse(localStorage.getItem('memberships') || '[]');
+                const userMembership = memberships.find(m => m.email === email);
+                const tbody = document.getElementById('membershipBody');
+                tbody.innerHTML = '';
+                if (userMembership && userMembership.plans.length > 0) {
+                    userMembership.plans.forEach(plan => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${plan.plan}</td>
+                            <td>${plan.description}</td>
+                            <td>${plan.price}</td>
+                            <td>${plan.startDate}</td>
+                            <td><span class="badge ${plan.status === 'Active' ? 'bg-success' : 'bg-warning'}">${plan.status}</span></td>
+                            <td><button class="btn btn-sm btn-outline-danger cancel-membership">Cancel</button></td>
+                        `;
+                        tbody.appendChild(row);
+                    });
+                }
+            }
+
+            function updateBookingTable() {
+                const bookings = JSON.parse(localStorage.getItem('bookings') || '[]');
+                const userBookings = bookings.find(b => b.email === email);
+                const tbody = document.getElementById('bookingBody');
+                tbody.innerHTML = '';
+                if (userBookings && userBookings.classes.length > 0) {
+                    userBookings.classes.forEach(cls => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${cls.class}</td>
+                            <td>${cls.day}</td>
+                            <td>${cls.time}</td>
+                            <td>${cls.instructor}</td>
+                            <td><span class="badge ${cls.status === 'Confirmed' ? 'bg-success' : 'bg-warning'}">${cls.status}</span></td>
+                            <td><button class="btn btn-sm btn-outline-danger">Cancel</button></td>
+                        `;
+                        tbody.appendChild(row);
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html>

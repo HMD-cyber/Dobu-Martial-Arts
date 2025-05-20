@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoBu Martial Arts - Login</title>
+    <!-- Bootstrap CSS (dark theme) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="text-danger">DoBu</span> Martial Arts
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home me-1"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="martial-arts.html">
+                            <i class="fas fa-fist-raised me-1"></i> Martial Arts
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html">
+                            <i class="fas fa-calendar-alt me-1"></i> Schedule
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">
+                            <i class="fas fa-tags me-1"></i> Pricing
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instructors.html">
+                            <i class="fas fa-user-ninja me-1"></i> Instructors
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">
+                            <i class="fas fa-images me-1"></i> Gallery
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="fas fa-envelope me-1"></i> Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="login.html">
+                            <i class="fas fa-sign-in-alt me-1"></i> Login
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">
+                            <i class="fas fa-user-plus me-1"></i> Register
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card shadow border-0">
+                        <div class="card-body p-4">
+                            <h1 class="h3 text-center text-danger mb-4">Log In to Your Account</h1>
+                            
+                            <form id="loginForm" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your email.
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
+                                    <input type="password" class="form-control" id="password" name="password" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your password.
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="remember" name="remember">
+                                    <label class="form-check-label" for="remember">Remember me</label>
+                                </div>
+                                
+                                <div class="d-grid mb-3">
+                                    <button type="submit" class="btn btn-danger">Log In</button>
+                                </div>
+                                
+                                <div class="text-center mb-3">
+                                    <a href="#" class="text-decoration-none text-danger">Forgot Password?</a>
+                                </div>
+                            </form>
+                            <p class="text-center">Don't have an account? <a href="register.html" class="text-danger">Register now</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-dark text-white border-0 h-100">
+                        <div class="card-body p-4">
+                            <h2 class="h5 text-danger mb-3">Member Benefits:</h2>
+                            <div class="d-flex mb-2">
+                                <div class="flex-shrink-0 me-3">
+                                    <i class="fas fa-calendar-check text-danger"></i>
+                                </div>
+                                <div>
+                                    <p class="mb-0">Easily book and manage your class schedule</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <div class="flex-shrink-0 me-3">
+                                    <i class="fas fa-user-shield text-danger"></i>
+                                </div>
+                                <div>
+                                    <p class="mb-0">Track your membership details and progress</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 me-3">
+                                    <i class="fas fa-percent text-danger"></i>
+                                </div>
+                                <div>
+                                    <p class="mb-0">Access to exclusive member promotions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-danger mb-3">DoBu Martial Arts</h5>
+                    <p>We craft innovative, accessible websites that help organizations of all sizes build strong, user-friendly brands.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-danger mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Home</a></li>
+                        <li class="mb-2"><a href="martial-arts.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Martial Arts</a></li>
+                        <li class="mb-2"><a href="schedule.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Class Schedule</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Pricing</a></li>
+                        <li class="mb-2"><a href="instructors.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Instructors</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-danger mb-3">Contact Us</h5>
+                    <address>
+                        <p class="mb-2"><i class="fas fa-map-marker-alt me-2 text-danger"></i> Stockport College, Manchester, UK</p>
+                        <p class="mb-2"><i class="fas fa-phone-alt me-2 text-danger"></i> +44 20 1234 5678</p>
+                        <p class="mb-2"><i class="fas fa-envelope me-2 text-danger"></i> info@dobumartialarts.com</p>
+                        <p><i class="fas fa-clock me-2 text-danger"></i> Mon-Sat: 6:00 AM - 9:00 PM</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 DoBu Martial Arts. All rights reserved.</p>
+                    <p class="mb-0">&copy; Developed by HMD.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

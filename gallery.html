@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoBu Martial Arts - Gallery</title>
+    <!-- Bootstrap CSS (dark theme) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <span class="text-danger">DoBu</span> Martial Arts
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" id="navItems">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-home me-1"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="martial-arts.html">
+                        <i class="fas fa-fist-raised me-1"></i> Martial Arts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="schedule.html">
+                        <i class="fas fa-calendar-alt me-1"></i> Schedule
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">
+                        <i class="fas fa-tags me-1"></i> Pricing
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="instructors.html">
+                        <i class="fas fa-user-ninja me-1"></i> Instructors
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">
+                        <i class="fas fa-images me-1"></i> Gallery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        <i class="fas fa-envelope me-1"></i> Contact
+                    </a>
+                </li>
+                <!-- Login/Register or User Dropdown will be dynamically added -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container py-5">
+            <h1 class="section-heading text-center mb-5">Gallery</h1>
+            
+            <!-- Gallery Filters -->
+            <div class="text-center mb-4">
+                <div class="btn-group" role="group" aria-label="Gallery filters">
+                    <button type="button" class="btn btn-outline-primary active" data-filter="all">All</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="facility">Facility</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="classes">Classes</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="events">Events</button>
+                </div>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="row g-4">
+                <!-- Facility images -->
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="facility">
+                    <div class="card h-100 shadow">
+                        <img src="https://www.usadojo.com/wp-content/uploads/2013/10/the-dojo-1066x550.jpg" class="card-img-top gallery-img" alt="Main Training Area">
+                        <div class="card-body">
+                            <h3 class="card-title h6">Main Training Area</h3>
+                            <p class="card-text small text-muted">Step into our expansive, fully matted dojo—ready for intense classes and sparring battles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="facility">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Z3ltJTIwZXF1aXBtZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" class="card-img-top gallery-img" alt="Fitness Room">
+                        <div class="card-body">
+                            <h3 class="card-title h6">Fitness Room</h3>
+                            <p class="card-text small text-muted">Our gym has everything you need—weights, cardio gear, and all the training tools to power your workout.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="facility">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.squarespace-cdn.com/content/v1/66263bdc120cb00aa7925d42/36352e0e-7703-4be4-8d72-e8e8a5bb4aef/L1151700.jpg" class="card-img-top gallery-img" alt="Sauna">
+                        <div class="card-body">
+                            <h3 class="card-title h6">Sauna & Steam Room</h3>
+                            <p class="card-text small text-muted">Enjoy our relaxation and recovery areas after your workout.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Classes images -->
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="classes">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8a2FyYXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" class="card-img-top gallery-img" alt="Karate Class">
+                        <div class="card-body">
+                            <h3 class="card-title h6">Karate Training</h3>
+                            <p class="card-text small text-muted">Evening karate class in full swing with students mastering their kata.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="classes">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5e819885737abc0444e654ef/1711880393339-8QVF7G2K6UFFD9DS6A6A/Gracie-Jiu-Jitsu-history-part-2.jpg" class="card-img-top gallery-img" alt="Jiu-Jitsu Class">
+                        <div class="card-body">
+                            <h3 class="card-title h6">Jiu-Jitsu Training</h3>
+                            <p class="card-text small text-muted">Intense ground fighting and grappling action in jiu-jitsu class.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="classes">
+                    <div class="card h-100 shadow">
+                        <img src="https://images.unsplash.com/photo-1591117207239-788bf8de6c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bXVheSUyMHRoYWl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" class="card-img-top gallery-img" alt="Muay Thai Class">
+                        <div class="card-body">
+                            <h3 class="card-title h6">Muay Thai Session</h3>
+                            <p class="card-text small text-muted">Working on pad drills and striking moves in our lively Muay Thai session.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Events images -->
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="events">
+                    <div class="card h-100 shadow">
+                        <img src="https://static.wikia.nocookie.net/thekaratekid/images/f/f0/Daniel_vs_johny.png/revision/latest/thumbnail/width/360/height/360?cb=20180514181803" class="card-img-top gallery-img" alt="Tournament">
+                        <div class="card-body">
+                            <h3 class="card-title h6">Annual Tournament</h3>
+                            <p class="card-text small text-muted">Our students showing their skills at the regional martial arts tournament.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="events">
+                    <div class="card h-100 shadow">
+                        <img src="https://gbjj.org/wp-content/uploads/2021/10/How_to_Tie_a_Jiu-Jitsu_Belt_700x.png" class="card-img-top gallery-img" alt="Belt Ceremony">
+                        <div class="card-body">
+                            <h3 class="card-title h6">Belt Promotion Ceremony</h3>
+                            <p class="card-text small text-muted">Students receiving their new belt ranks after successful grading.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="events">
+                    <div class="card h-100 shadow">
+                        <img src="https://bristoltitanskravmaga.co.uk/wp-content/uploads/sites/14/2016/05/British-Krav-Maga_Nov15_138_web-copy-1-495x400.jpg" class="card-img-top gallery-img" alt="Workshop">
+                        <div class="card-body">
+                            <h3 class="card-title h6">Self-Defense Workshop</h3>
+                            <p class="card-text small text-muted">Students excitedly receive their new belts after acing their grading</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- More images -->
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="classes">
+                    <div class="card h-100 shadow">
+                        <img src="https://media.gettyimages.com/id/1151356731/video/ld-judoka-in-blue-outfit-grabbing-his-opponent-and-throwing-him-on-the-floor.jpg?s=640x640&k=20&c=OEnh5RGe4fYcJNyGW08ghK1t9vJ3kCvYGqAGQcIw5-8=" class="card-img-top gallery-img" alt="Judo Class">
+                        <div class="card-body">
+                            <h3 class="card-title h6">Judo Techniques</h3>
+                            <p class="card-text small text-muted">Students practicing throwing techniques in our judo class.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="classes">
+                    <div class="card h-100 shadow">
+                        <img src="https://t3.ftcdn.net/jpg/02/70/35/60/360_F_270356061_L8WmXNllARBmbKZJsPUHHYK5VtpRiqZu.jpg" class="card-img-top gallery-img" alt="Kids Class">
+                        <div class="card-body">
+                            <h3 class="card-title h6">Children's Martial Arts</h3>
+                            <p class="card-text small text-muted">Our junior members learning martial arts in a fun, safe environment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item" data-category="facility">
+                    <div class="card h-100 shadow">
+                        <img src="https://media.istockphoto.com/id/1089810082/photo/abstract-group-of-business-people-in-the-meeting.jpg?s=612x612&w=0&k=20&c=MxXVCivEVFIxUTBXt9ibBsU_OcpxZYf4CCjOOg5-J9Q=" class="card-img-top gallery-img" alt="Reception">
+                        <div class="card-body">
+                            <h3 class="card-title h6">Reception Area</h3>
+                            <p class="card-text small text-muted">Our reception area is the first stop where members check in for their classes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Photo Gallery Notice -->
+            <div class="card bg-dark mt-5">
+                <div class="card-body">
+                    <h3 class="h5 text-danger mb-3">Photo Gallery Notice</h3>
+                    <p class="mb-0">Check out these photos of our DoBu Martial Arts gym and classes! If you want to see more or have any questions, we'd love to welcome you in person. <a href="contact.html">contact us</a> or visit our facility in person.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-danger mb-3">DoBu Martial Arts</h5>
+                    <p>We craft innovative, accessible websites that help organizations of all sizes build strong, user-friendly brands.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-danger mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Home</a></li>
+                        <li class="mb-2"><a href="martial-arts.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Martial Arts</a></li>
+                        <li class="mb-2"><a href="schedule.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Class Schedule</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Pricing</a></li>
+                        <li class="mb-2"><a href="instructors.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Instructors</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-danger mb-3">Contact Us</h5>
+                    <address>
+                        <p class="mb-2"><i class="fas fa-map-marker-alt me-2 text-danger"></i> Stockport College, Manchester, UK</p>
+                        <p class="mb-2"><i class="fas fa-phone-alt me-2 text-danger"></i> +44 20 1234 5678</p>
+                        <p class="mb-2"><i class="fas fa-envelope me-2 text-danger"></i> info@dobumartialarts.com</p>
+                        <p><i class="fas fa-clock me-2 text-danger"></i> Mon-Sat: 6:00 AM - 9:00 PM</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 DoBu Martial Arts. All rights reserved.</p>
+                    <p class="mb-0">&copy; Developed by HMD.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

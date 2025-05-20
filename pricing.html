@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoBu Martial Arts - Pricing & Memberships</title>
+    <!-- Bootstrap CSS (dark theme) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <span class="text-danger">DoBu</span> Martial Arts
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" id="navItems">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-home me-1"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="martial-arts.html">
+                        <i class="fas fa-fist-raised me-1"></i> Martial Arts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="schedule.html">
+                        <i class="fas fa-calendar-alt me-1"></i> Schedule
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">
+                        <i class="fas fa-tags me-1"></i> Pricing
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="instructors.html">
+                        <i class="fas fa-user-ninja me-1"></i> Instructors
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">
+                        <i class="fas fa-images me-1"></i> Gallery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        <i class="fas fa-envelope me-1"></i> Contact
+                    </a>
+                </li>
+                <!-- Login/Register or User Dropdown will be dynamically added -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container py-5">
+            <h1 class="section-heading text-center mb-5">Pricing & Membership Options</h1>
+            
+            <!-- Membership Plans -->
+<h2 class="h3 mb-4">Monthly Membership Plans</h2>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-5">
+    <!-- Basic Plan -->
+    <div class="col">
+        <div class="card pricing-card h-100">
+            <div class="card-header bg-danger text-white text-center py-3">
+                <h3 class="h5 mb-0">Basic</h3>
+            </div>
+            <div class="card-body text-center d-flex flex-column">
+                <div class="py-3">
+                    <span class="price">£25.00</span>
+                    <span class="text-muted"> / month</span>
+                </div>
+                <p class="flex-grow-1">1 martial art - 2 sessions per week</p>
+                <ul class="list-unstyled mb-4 text-start">
+                    <li><i class="fas fa-check text-success me-2"></i> Access to one martial art style</li>
+                    <li><i class="fas fa-check text-success me-2"></i> 2 classes per week</li>
+                    <li><i class="fas fa-check text-success me-2"></i> Access to open mat sessions</li>
+                    <li><i class="fas fa-check text-success me-2"></i> Online booking system</li>
+                </ul>
+                <button class="btn btn-primary w-100 subscribe-button" type="button" data-bs-toggle="collapse" data-bs-target="#basicForm" aria-expanded="false" aria-controls="basicForm">
+                    Select Plan
+                </button>
+                <div class="collapse" id="basicForm">
+                    <div class="card-body p-3">
+                        <form id="membershipFormBasic" class="needs-validation" novalidate>
+                            <div class="mb-2">
+                                <label for="membershipNameBasic" class="form-label small">Your Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" id="membershipNameBasic" name="membershipName" required>
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <label for="membershipEmailBasic" class="form-label small">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control form-control-sm" id="membershipEmailBasic" name="membershipEmail" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-danger w-100 mt-2">Sign Up</button>
+                        </form>
+                        <div id="membershipAlertsBasic"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Intermediate Plan -->
+    <div class="col">
+        <div class="card pricing-card h-100">
+            <div class="card-header bg-danger text-white text-center py-3">
+                <h3 class="h5 mb-0">Intermediate</h3>
+            </div>
+            <div class="card-body text-center d-flex flex-column">
+                <div class="py-3">
+                    <span class="price">£35.00</span>
+                    <span class="text-muted"> / month</span>
+                </div>
+                <p class="flex-grow-1">1 martial art - 3 sessions per week</p>
+                <ul class="list-unstyled mb-4 text-start">
+                    <li><i class="fas fa-check text-success me-2"></i> Access to one martial art style</li>
+                    <li><i class="fas fa-check text-success me-2"></i> 3 classes per week</li>
+                    <li><i class="fas fa-check text-success me-2"></i> Access to open mat sessions</li>
+                    <li><i class="fas fa-check text-success me-2"></i> Online booking system</li>
+                </ul>
+                <button class="btn btn-primary w-100 subscribe-button" type="button" data-bs-toggle="collapse" data-bs-target="#intermediateForm" aria-expanded="false" aria-controls="intermediateForm">
+                    Select Plan
+                </button>
+                <div class="collapse" id="intermediateForm">
+                    <div class="card-body p-3">
+                        <form id="membershipFormIntermediate" class="needs-validation" novalidate>
+                            <div class="mb-2">
+                                <label for="membershipNameIntermediate" class="form-label small">Your Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" id="membershipNameIntermediate" name="membershipName" required>
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <label for="membershipEmailIntermediate" class="form-label small">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control form-control-sm" id="membershipEmailIntermediate" name="membershipEmail" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-danger w-100 mt-2">Sign Up</button>
+                        </form>
+                        <div id="membershipAlertsIntermediate"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Advanced Plan -->
+    <div class="col">
+        <div class="card pricing-card h-100">
+            <div class="card-header bg-danger text-white text-center py-3">
+                <h3 class="h5 mb-0">Advanced</h3>
+            </div>
+            <div class="card-body text-center d-flex flex-column">
+                <div class="py-3">
+                    <span class="price">£45.00</span>
+                    <span class="text-muted"> / month</span>
+                </div>
+                <p class="flex-grow-1">Any 2 martial arts - 5 sessions per week</p>
+                <ul class="list-unstyled mb-4 text-start">
+                    <li><i class="fas fa-check text-success me-2"></i> Access to two martial art styles</li>
+                    <li><i class="fas fa-check text-success me-2"></i> 5 classes per week</li>
+                    <li><i class="fas fa-check text-success me-2"></i> Access to open mat sessions</li>
+                    <li><i class="fas fa-check text-success me-2"></i> Online booking system</li>
+                </ul>
+                <button class="btn btn-primary w-100 subscribe-button" type="button" data-bs-toggle="collapse" data-bs-target="#advancedForm" aria-expanded="false" aria-controls="advancedForm">
+                    Select Plan
+                </button>
+                <div class="collapse" id="advancedForm">
+                    <div class="card-body p-3">
+                        <form id="membershipFormAdvanced" class="needs-validation" novalidate>
+                            <div class="mb-2">
+                                <label for="membershipNameAdvanced" class="form-label small">Your Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" id="membershipNameAdvanced" name="membershipName" required>
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <label for="membershipEmailAdvanced" class="form-label small">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control form-control-sm" id="membershipEmailAdvanced" name="membershipEmail" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-danger w-100 mt-2">Sign Up</button>
+                        </form>
+                        <div id="membershipAlertsAdvanced"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Elite Plan -->
+    <div class="col">
+        <div class="card pricing-card h-100">
+            <div class="card-header bg-danger text-white text-center py-3">
+                <h3 class="h5 mb-0">Elite</h3>
+            </div>
+            <div class="card-body text-center d-flex flex-column">
+                <div class="py-3">
+                    <span class="price">£60.00</span>
+                    <span class="text-muted"> / month</span>
+                </div>
+                <p class="flex-grow-1">Unlimited classes</p>
+                <ul class="list-unstyled mb-4 text-start">
+                    <li><i class="fas fa-check text-success me-2"></i> Access to all martial art styles</li>
+                    <li><i class="fas fa-check text-success me-2"></i> Unlimited classes</li>
+                    <li><i class="fas fa-check text-success me-2"></i> Priority booking</li>
+                    <li><i class="fas fa-check text-success me-2"></i> 10% discount on private lessons</li>
+                    <li><i class="fas fa-check text-success me-2"></i> 1 free private session per month</li>
+                </ul>
+                <button class="btn btn-primary w-100 subscribe-button" type="button" data-bs-toggle="collapse" data-bs-target="#eliteForm" aria-expanded="false" aria-controls="eliteForm">
+                    Select Plan
+                </button>
+                <div class="collapse" id="eliteForm">
+                    <div class="card-body p-3">
+                        <form id="membershipFormElite" class="needs-validation" novalidate>
+                            <div class="mb-2">
+                                <label for="membershipNameElite" class="form-label small">Your Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-sm" id="membershipNameElite" name="membershipName" required>
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <label for="membershipEmailElite" class="form-label small">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control form-control-sm" id="membershipEmailElite" name="membershipEmail" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-danger w-100 mt-2">Sign Up</button>
+                        </form>
+                        <div id="membershipAlertsElite"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            
+            <!-- FAQs -->
+            <div class="mt-5">
+                <h2 class="h3 mb-4">Frequently Asked Questions</h2>
+                <div class="accordion" id="pricingFaqs">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Do I need to pay a registration fee?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#pricingFaqs">
+                            <div class="accordion-body">
+                                No registration fee here. You just pay for the membership or service you choose.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Can I try a class before committing to a membership?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#pricingFaqs">
+                            <div class="accordion-body">
+                                Yes, new members can enjoy a free trial class. Please contact us to schedule your session.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Are there any discounts available?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#pricingFaqs">
+                            <div class="accordion-body">
+                                Family members get 10% off, and students with ID save too.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                What is the minimum contract length?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#pricingFaqs">
+                            <div class="accordion-body">
+                                No long contracts here! Our month-to-month memberships let you cancel anytime with 30 days’ notice.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Do I need to buy special equipment or uniform?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#pricingFaqs">
+                            <div class="accordion-body">
+                                Begin in whatever sportswear you like! As you level up, grab your official uniform from us to train like a pro.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="text-center mt-5 p-4 bg-dark">
+                <h3 class="h4 mb-3">Need More Information?</h3>
+                <p class="mb-4">Get in touch to talk about what you need or to set up a visit to our gym.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="contact.html" class="btn btn-danger">Contact Us</a>
+                    <a href="register.html" class="btn btn-outline-secondary">Sign Up Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-danger mb-3">DoBu Martial Arts</h5>
+                    <p>We craft innovative, accessible websites that help organizations of all sizes build strong, user-friendly brands.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-danger mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Home</a></li>
+                        <li class="mb-2"><a href="martial-arts.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Martial Arts</a></li>
+                        <li class="mb-2"><a href="schedule.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Class Schedule</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Pricing</a></li>
+                        <li class="mb-2"><a href="instructors.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Instructors</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-danger mb-3">Contact Us</h5>
+                    <address>
+                        <p class="mb-2"><i class="fas fa-map-marker-alt me-2 text-danger"></i> Stockport College, Manchester, UK</p>
+                        <p class="mb-2"><i class="fas fa-phone-alt me-2 text-danger"></i> +44 20 1234 5678</p>
+                        <p class="mb-2"><i class="fas fa-envelope me-2 text-danger"></i> info@dobumartialarts.com</p>
+                        <p><i class="fas fa-clock me-2 text-danger"></i> Mon-Sat: 6:00 AM - 9:00 PM</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 DoBu Martial Arts. All rights reserved.</p>
+                    <p class="mb-0">&copy; Developed by HMD.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

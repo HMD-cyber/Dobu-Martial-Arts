@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoBu Martial Arts - Contact Us</title>
+    <!-- Bootstrap CSS (dark theme) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <span class="text-danger">DoBu</span> Martial Arts
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" id="navItems">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-home me-1"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="martial-arts.html">
+                        <i class="fas fa-fist-raised me-1"></i> Martial Arts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="schedule.html">
+                        <i class="fas fa-calendar-alt me-1"></i> Schedule
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">
+                        <i class="fas fa-tags me-1"></i> Pricing
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="instructors.html">
+                        <i class="fas fa-user-ninja me-1"></i> Instructors
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">
+                        <i class="fas fa-images me-1"></i> Gallery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">
+                        <i class="fas fa-envelope me-1"></i> Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container py-5">
+            <h1 class="section-heading text-center mb-5">Contact Us</h1>
+            
+            <!-- Contact Form and Info -->
+            <div class="row g-5">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body p-4">
+                            <h2 class="h4 text-danger mb-4">Send Us a Message</h2>
+                            <div id="formAlerts"></div>
+                            <form id="contactForm" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Your Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your name.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject" name="subject">
+                                        <option value="membership">Membership Enquiry</option>
+                                        <option value="class">Class Information</option>
+                                        <option value="private">Private Lessons</option>
+                                        <option value="trial">Free Trial Request</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                    <div class="invalid-feedback">
+                                        Please enter your message.
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-danger">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body p-4">
+                            <h2 class="h4 text-danger mb-4">Contact Information</h2>
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0 me-3">
+                                    <div class="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="h6 mb-1">Address</h3>
+                                    <p class="mb-0">Stockport College<br>Manchester, UK</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0 me-3">
+                                    <div class="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="h6 mb-1">Phone</h3>
+                                    <p class="mb-0">+44 20 1234 5678</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0 me-3">
+                                    <div class="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="h6 mb-1">Email</h3>
+                                    <p class="mb-0">info@dobumartialarts.com</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 me-3">
+                                    <div class="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="h6 mb-1">Opening Hours</h3>
+                                    <p class="mb-0">Monday - Friday: 6:00 AM - 9:00 PM<br>Saturday - Sunday: 8:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<br>
+<br>
+
+            <!-- Connect With Us and Map -->
+<div class="row g-5">
+    <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="card border-0 shadow">
+            <div class="card-body p-4">
+                <h2 class="h4 text-danger mb-4">Connect With Us</h2>
+                <p class="mb-4">Stay sharp! Follow our social channels for stealthy updates, training changes, and secret events:</p>
+                <div class="d-flex gap-3 mb-4">
+                    <a href="#" class="btn btn-outline-primary btn-lg rounded-circle">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-info btn-lg rounded-circle">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-danger btn-lg rounded-circle">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-danger btn-lg rounded-circle">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+
+                <div class="card bg-dark" style="width: 600px; height: 250px;">
+                    <div class="card-body p-3">
+                        <h3 class="h6 mb-3">Subscribe to Our Newsletter</h3>
+                        <p class="small mb-4">Receive timely updates on news, promotions, and upcoming events.</p>
+                        <form>
+                            <div class="input-group input-group-sm">
+                                <input type="email" class="form-control form-control-sm" placeholder="Your email address" aria-label="Email address" aria-describedby="button-subscribe">
+                                <button class="btn btn-danger btn-sm" type="button" id="button-subscribe">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card border-0 shadow map-container">
+            <div class="card-body p-0">
+                <div class="ratio ratio-1x1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2412.740102112848!2d-2.158962!3d53.404275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487badf6f8f8f8f8%3A0x1234567890abcdef!2sStockport%20College%2C%20Wellington%20Road%20South%2C%20Stockport%20SK1%203UQ%2C%20UK!5e0!3m2!1sen!2sus!4v1716027661!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- FAQ Section -->
+            <div class="row g-5 mt-5">
+                <div class="col-12">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4">
+                            <h2 class="h3 text-center mb-4">Frequently Asked Questions</h2>
+                            <div class="accordion" id="contactFaqs">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            How do I book a free trial class?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#contactFaqs">
+                                        <div class="accordion-body">
+                                            Ready to step onto the mat? Book your free trial by completing the form above, calling our dojo, or visiting during opening hours. Be sure to tell us which martial art you want to master.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            What should I bring to my first class?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#contactFaqs">
+                                        <div class="accordion-body">
+                                            ome as you are—t-shirt and shorts or sweatpants work perfectly! Bring a water bottle and a small towel. No need for special uniforms during your trial. If you choose to stay, we’ll help you suit up properly.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Do you offer private lessons?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#contactFaqs">
+                                        <div class="accordion-body">
+                                            Yes, private lessons with our instructors are available at £15 per hour. Scheduling depends on instructor availability. Contact us to learn more and book your session.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Is there parking available?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#contactFaqs">
+                                        <div class="accordion-body">
+                                            Yes, we offer dedicated parking for members. If our lot is full, public parking is available nearby.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-danger mb-3">DoBu Martial Arts</h5>
+                    <p>We craft innovative, accessible websites that help organizations of all sizes build strong, user-friendly brands.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-danger mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Home</a></li>
+                        <li class="mb-2"><a href="martial-arts.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Martial Arts</a></li>
+                        <li class="mb-2"><a href="schedule.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Class Schedule</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Pricing</a></li>
+                        <li class="mb-2"><a href="instructors.html" class="text-decoration-none text-white"><i class="fas fa-chevron-right me-2 text-danger"></i>Instructors</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-danger mb-3">Contact Us</h5>
+                    <address>
+                        <p class="mb-2"><i class="fas fa-map-marker-alt me-2 text-danger"></i> Stockport College, Manchester, UK</p>
+                        <p class="mb-2"><i class="fas fa-phone-alt me-2 text-danger"></i> +44 20 1234 5678</p>
+                        <p class="mb-2"><i class="fas fa-envelope me-2 text-danger"></i> info@dobumartialarts.com</p>
+                        <p><i class="fas fa-clock me-2 text-danger"></i> Mon-Sat: 6:00 AM - 9:00 PM</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 DoBu Martial Arts. All rights reserved.</p>
+                    <p class="mb-0">&copy; Developed by HMD.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Form validation
+        (function() {
+            'use strict';
+            var forms = document.querySelectorAll('.needs-validation');
+            Array.prototype.slice.call(forms).forEach(function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+</body>
+</html>
